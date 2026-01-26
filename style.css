@@ -3,9 +3,10 @@
 
 body {
     background-color: green;
+    background-image: url("media/background.png");
+    background-position: center;
     font-family: 'Minecraftia', 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-size: medium;
 }
 
 div {
@@ -20,20 +21,15 @@ div {
 }
 
 #navbar {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-#navbar a,
-#navbar p {
+#navbar li {
+    display: inline;
     padding: 0px 15px;
 }
 
-#navbar p {
+#navbar .current {
     font-weight: bold;
 }
 
@@ -55,4 +51,12 @@ td {
 #bee {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+    div {
+        max-width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
